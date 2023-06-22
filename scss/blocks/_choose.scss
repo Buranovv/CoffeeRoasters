@@ -1,0 +1,70 @@
+.choose {
+  height: 577px;
+  padding: 102px 0;
+  margin-bottom: 350px;
+
+  border-radius: 10px;
+  background: #2c343e;
+
+  text-align: center;
+
+  position: relative;
+
+  &__title {
+    margin-bottom: 32px;
+
+    color: #fefcf7;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &__text {
+    width: 540px;
+    margin: 0 auto;
+
+    color: #fefcf7;
+    font-size: 16px;
+    font-family: Barlow Regular;
+    line-height: 26px;
+  }
+
+  &__box {
+    margin: 0 auto;
+    width: 1100px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.benefits {
+  width: 350px;
+  padding: 72px 48px 48px;
+
+  border-radius: 8px;
+  background: #0e8784;
+
+  position: relative;
+  bottom: -86px;
+
+  text-align: center;
+
+  &__title {
+    margin-top: 56px;
+
+    color: #fefcf7;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__text {
+    width: 255px;
+    margin: 0 auto;
+    margin-top: 24px;
+
+    color: #fefcf7;
+    font-size: 16px;
+    font-family: Barlow Regular;
+    line-height: 26px;
+  }
+}

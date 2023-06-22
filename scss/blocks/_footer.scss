@@ -1,0 +1,36 @@
+.footer {
+  margin: 200px 0 135px;
+  padding: 48px 85px;
+
+  display: flex;
+  align-items: center;
+
+  background: #2c343e;
+
+  &__list {
+    margin-left: 103px;
+
+    display: flex;
+    align-items: center;
+    gap: 33px;
+  }
+  &__item {
+    color: #83888f;
+    font-size: 12px;
+    font-family: Barlow Bold;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+  }
+  &__item:hover {
+    color: #fefcf7;
+  }
+
+  &__links {
+    margin-left: 360px;
+
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}
