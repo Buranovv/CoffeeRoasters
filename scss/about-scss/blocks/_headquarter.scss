@@ -1,0 +1,41 @@
+.headquarters {
+  margin-top: 168px;
+  padding: 0 85px;
+
+  &__title {
+    color: #83888f;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__content {
+    margin-top: 72px;
+
+    display: flex;
+    align-items: center;
+    gap: 108px;
+  }
+}
+
+.country {
+  width: 285px;
+
+  &__title {
+    margin-top: 46px;
+
+    color: #333d4b;
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__item {
+    color: #333d4b;
+    font-size: 16px;
+    font-family: Barlow Regular;
+    line-height: 26px;
+  }
+}

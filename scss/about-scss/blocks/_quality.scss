@@ -1,0 +1,25 @@
+.quality {
+  padding: 0 85px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 244px;
+
+  border-radius: 10px;
+  background: #2c343e;
+
+  position: relative;
+
+  &__title {
+    color: #fefcf7;
+  }
+  &__text {
+    color: #fefcf7;
+    opacity: 0.800000011920929;
+  }
+  &__img{
+    position: relative;
+    top: -100px;
+  }
+}
