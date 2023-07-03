@@ -1,0 +1,53 @@
+@import "scards";
+@import "info";
+
+.services {
+  margin-top: 168px;
+  padding: 0 85px;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  &__item {
+    width: 255px;
+    padding: 24px 0;
+    border-bottom: 1px solid #83888f80;
+
+    display: inline-flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 23.5px;
+
+    color: #333d4b;
+    font-size: 24px;
+    line-height: 32px;
+
+    opacity: 0.4000000059604645;
+  }
+  &__item:hover {
+    opacity: 0.6015406847000122;
+  }
+
+  &__span {
+    color: #83888f;
+  }
+
+  &__span-first {
+    color: #0e8784;
+  }
+
+  &__first {
+    border-bottom: 2px solid #83888f80;
+    padding: 0 0 24px;
+  }
+
+  &__span-fifth {
+    color: #83888f;
+  }
+  &__item-active,
+  &__item-active:hover {
+    opacity: 1;
+    border: none;
+  }
+}

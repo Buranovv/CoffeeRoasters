@@ -1,0 +1,29 @@
+.info {
+  margin-bottom: 40px;
+  padding: 31px 64px;
+  width: 730px;
+  border-radius: 10px;
+  background: #2c343e;
+
+  &__title {
+    margin-bottom: 8px;
+
+    color: #fff;
+    font-size: 16px;
+    font-family: Barlow Regular;
+    line-height: 26px;
+    text-transform: uppercase;
+
+    opacity: 0.5036933422088623;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  &__span {
+    color: rgba(14, 135, 132, 1);
+  }
+}

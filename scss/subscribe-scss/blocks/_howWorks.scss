@@ -1,0 +1,22 @@
+.howWorks {
+  border-radius: 10px;
+  background: #2c343e;
+  margin-top: 174px;
+  padding: 94px 85px;
+
+  &__box {
+    margin: 0;
+  }
+}
+.card2 {
+  &__title {
+    color: #fdd6ba;
+  }
+  &__title2 {
+    color: #fefcf7;
+  }
+  &__text {
+    color: #fefcf7;
+    width: 280px;
+  }
+}
