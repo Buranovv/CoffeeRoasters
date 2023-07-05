@@ -34,3 +34,8 @@ li {
     padding: 0 20px;
   }
 }
+@media only screen and (max-width: 550px) {
+  .container {
+    padding: 0 15px;
+  }
+}
