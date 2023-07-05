@@ -6,6 +6,7 @@
 }
 .nav-list {
   display: flex;
+  align-items: center;
   gap: 33px;
 }
 .nav-list-item {
@@ -21,4 +22,33 @@
 
 .nav-list-item:hover {
   color: #333d4b;
+}
+
+.dropdown {
+  display: none;
+  &__list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .nav-list-item {
+    line-height: 11px;
+
+    font-size: 9px;
+  }
+  .header {
+    &__logo {
+      width: 210px;
+      height: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav-list {
+    display: none;
+  }
+  .dropdown {
+    display: block;
+  }
 }
