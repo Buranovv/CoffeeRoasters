@@ -1,5 +1,5 @@
 .howWorks {
-  width: 1280px;
+  max-width: 1280px;
   padding: 0 85px;
 
   &__title {
@@ -11,14 +11,21 @@
   }
 
   &__img {
+    width: 775px;
+    height: 40px;
     margin-bottom: 67px;
+
+    background: url(../../images/circle-path.png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__box {
     margin-bottom: 64px;
 
     display: flex;
-    gap: 95px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -43,11 +50,95 @@
   }
 
   &__text {
-    width: 285px;
+    max-width: 285px;
 
     color: #333d4b;
     font-size: 16px;
     font-family: Barlow Regular;
     line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .howWorks {
+    padding: 0;
+
+    &__img {
+      display: none;
+    }
+  }
+  .card2 {
+    &__title2 {
+      width: 223px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+    &__text {
+      width: 223px;
+      height: 154px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .card2 {
+    &__title2 {
+      width: 190px;
+      font-size: 23px;
+      line-height: 27px;
+    }
+    &__text {
+      width: 190px;
+      height: 121px;
+      font-size: 10px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .howWorks {
+    text-align: center;
+
+    &__box {
+      flex-direction: column;
+      margin-bottom: 54px;
+    }
+  }
+  .card2 {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 28px;
+    }
+    &__title2 {
+      width: 320px;
+      margin-bottom: 32px;
+
+      font-size: 28px;
+      line-height: 32px;
+    }
+    &__text {
+      width: 400px;
+      height: 120px;
+      margin-bottom: 30px;
+
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 554px) {
+  .howWorks {
+    &__title {
+      margin-bottom: 80px;
+      padding-top: 30px;
+    }
   }
 }

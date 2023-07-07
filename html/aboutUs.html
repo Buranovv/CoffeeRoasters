@@ -11,32 +11,71 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    
 
     <title>About us</title>
   </head>
   <body>
     <div class="container">
       <header class="header">
-        <img src="../images/logo.svg" alt="Log" class="logo" />
+        <img
+          class="header__logo"
+          width="236"
+          height="26"
+          src="../images/logo.svg"
+          alt="Log"
+          class="logo"
+        />
         <nav class="nav">
           <ul class="nav-list">
             <li>
-              <a href="/index.html" class="nav-list-item nav-list-item-active"
-                >Home</a
-              >
+              <a href="#" class="nav-list-item">Home</a>
             </li>
-            <li><a href="#" class="nav-list-item">About us</a></li>
             <li>
-              <a href="./subscribe.html" class="nav-list-item"
+              <a href="./html/aboutUs.html" class="nav-list-item">About us</a>
+            </li>
+            <li>
+              <a href="./html/subscribe.html" class="nav-list-item"
                 >Create your plan</a
               >
             </li>
           </ul>
+          <div class="dropdown">
+            <svg
+              width="16"
+              height="15"
+              viewBox="0 0 16 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="Combined Shape 2">
+                <path
+                  class="dropdown__img"
+                  id="Combined Shape"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0 1.5C0 0.671573 0.671573 0 1.5 0H14.5C15.3284 0 16 0.671573 16 1.5C16 2.32843 15.3284 3 14.5 3H1.5C0.671573 3 0 2.32843 0 1.5ZM0 7.5C0 6.67157 0.671573 6 1.5 6H14.5C15.3284 6 16 6.67157 16 7.5C16 8.32843 15.3284 9 14.5 9H1.5C0.671573 9 0 8.32843 0 7.5ZM1.5 12C0.671573 12 0 12.6716 0 13.5C0 14.3284 0.671573 15 1.5 15H14.5C15.3284 15 16 14.3284 16 13.5C16 12.6716 15.3284 12 14.5 12H1.5Z"
+                  fill="#333D4B"
+                />
+              </g>
+            </svg>
+            <ul class="dropdown__list">
+              <li>
+                <a href="#" class="dropdown-item">Home</a>
+              </li>
+              <li>
+                <a href="./html/aboutUs.html" class="dropdown-item">About us</a>
+              </li>
+              <li>
+                <a href="./html/subscribe.html" class="dropdown-item"
+                  >Create your plan</a
+                >
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
-        <section class="hero">
+        <!-- <section class="hero">
           <h2 class="hero__title">About Us</h2>
           <p class="hero__text">
             Coffeeroasters began its journey of exotic discovery in 1999,
@@ -44,13 +83,12 @@
             been dedicated to bring the perfect cup - from bean to brew - in
             every shipment.
           </p>
-        </section>
+        </section> -->
         <section class="section commitment">
           <img
             class="section__img"
             src="../images/aboutUsImg/our-commit.png"
             width="445"
-            height="520"
             alt="Waiter"
           />
           <div class="commitment__content">
@@ -71,65 +109,65 @@
             </p>
           </div>
         </section>
-        <section class="quality">
-          <div class="quality-content">
-            <h2 class="section__titles quality__title">
-              Uncompromising quality
-            </h2>
-            <p class="section__texts quality__text">
-              Although we work with growers who pay close attention to all
-              stages of harvest and processing, we employ, on our end, a
-              rigorous quality control program to avoid over-roasting or baking
-              the coffee dry. Every bag of coffee is tagged with a roast date
-              and batch number. Our goal is to roast consistent, user-friendly
-              coffee, so that brewing is easy and enjoyable.
-            </p>
-          </div>
-          <img
-            src="../images/aboutUsImg/quality.png"
-            alt="Coffee"
-            width="445"
-            height="474"
-            class="section__img quality__img"
-          />
-        </section>
-        <section class="headquarters">
-          <h2 class="headquarters__title">Our headquarters</h2>
-          <div class="headquarters__content">
-            <div class="country">
-              <img src="../images/aboutUsImg/UK.svg" alt="UK" />
-              <h3 class="country__title">United Kingdom</h3>
-              <ul class="country__list">
-                <li class="country__item">68 Asfordby Rd</li>
-                <li class="country__item">Alcaston</li>
-                <li class="country__item">SY6 1YA</li>
-                <li class="country__item">+44 1241 918425</li>
-              </ul>
+        <!-- <section class="quality">
+            <div class="quality-content">
+              <h2 class="section__titles quality__title">
+                Uncompromising quality
+              </h2>
+              <p class="section__texts quality__text">
+                Although we work with growers who pay close attention to all
+                stages of harvest and processing, we employ, on our end, a
+                rigorous quality control program to avoid over-roasting or baking
+                the coffee dry. Every bag of coffee is tagged with a roast date
+                and batch number. Our goal is to roast consistent, user-friendly
+                coffee, so that brewing is easy and enjoyable.
+              </p>
             </div>
-            <div class="country">
-              <img src="../images/aboutUsImg/Canada.svg" alt="Canada" />
-              <h3 class="country__title">Canada</h3>
-              <ul class="country__list">
-                <li class="country__item">1528 Eglinton Avenue</li>
-                <li class="country__item">Toronto</li>
-                <li class="country__item">Ontario M4P 1A6</li>
-                <li class="country__item">+1 416 485 2997</li>
-              </ul>
+            <img
+              src="../images/aboutUsImg/quality.png"
+              alt="Coffee"
+              width="445"
+              height="474"
+              class="section__img quality__img"
+            />
+          </section>
+          <section class="headquarters">
+            <h2 class="headquarters__title">Our headquarters</h2>
+            <div class="headquarters__content">
+              <div class="country">
+                <img src="../images/aboutUsImg/UK.svg" alt="UK" />
+                <h3 class="country__title">United Kingdom</h3>
+                <ul class="country__list">
+                  <li class="country__item">68 Asfordby Rd</li>
+                  <li class="country__item">Alcaston</li>
+                  <li class="country__item">SY6 1YA</li>
+                  <li class="country__item">+44 1241 918425</li>
+                </ul>
+              </div>
+              <div class="country">
+                <img src="../images/aboutUsImg/Canada.svg" alt="Canada" />
+                <h3 class="country__title">Canada</h3>
+                <ul class="country__list">
+                  <li class="country__item">1528 Eglinton Avenue</li>
+                  <li class="country__item">Toronto</li>
+                  <li class="country__item">Ontario M4P 1A6</li>
+                  <li class="country__item">+1 416 485 2997</li>
+                </ul>
+              </div>
+              <div class="country">
+                <img src="../images/aboutUsImg/Australia.svg" alt="Australia" />
+                <h3 class="country__title">Australia</h3>
+                <ul class="country__list">
+                  <li class="country__item">36 Swanston Street</li>
+                  <li class="country__item">Kewell</li>
+                  <li class="country__item">Victoria</li>
+                  <li class="country__item">+61 4 9928 3629</li>
+                </ul>
+              </div>
             </div>
-            <div class="country">
-              <img src="../images/aboutUsImg/Australia.svg" alt="Australia" />
-              <h3 class="country__title">Australia</h3>
-              <ul class="country__list">
-                <li class="country__item">36 Swanston Street</li>
-                <li class="country__item">Kewell</li>
-                <li class="country__item">Victoria</li>
-                <li class="country__item">+61 4 9928 3629</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+          </section>-->
       </main>
-      <footer class="footer">
+      <!-- <footer class="footer">
         <img src="../images/footer-logo.svg" alt="Logo" />
         <ul class="footer__list">
           <li><a href="/index.html" class="footer__item">Home</a></li>
@@ -190,7 +228,7 @@
               /></svg
           ></a>
         </div>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>

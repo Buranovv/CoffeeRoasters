@@ -3,13 +3,17 @@
   padding: 48px 85px;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   background: #2c343e;
 
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 102px;
+  }
   &__list {
-    margin-left: 103px;
-
     display: flex;
     align-items: center;
     gap: 33px;
@@ -27,8 +31,6 @@
   }
 
   &__links {
-    margin-left: 360px;
-
     display: flex;
     align-items: center;
     gap: 24px;
@@ -36,5 +38,59 @@
 
   &__img:hover {
     fill: #fdd6ba;
+  }
+}
+
+@media only screen and (max-width: 1105px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 876px) {
+  .footer {
+    &__content {
+      gap: 80px;
+    }
+    &__item {
+      line-height: 11px;
+      font-size: 9px;
+    }
+    &__logo {
+      width: 180px;
+      height: 20px;
+    }
+  }
+}
+@media only screen and (max-width: 746px) {
+  .footer {
+    flex-direction: column;
+    gap: 65px;
+    &__content {
+      flex-direction: column;
+      gap: 32px;
+    }
+    &__item {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &__logo {
+      width: 236px;
+      height: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    padding: 54px 55px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer {
+    &__list {
+      flex-direction: column;
+    }
   }
 }

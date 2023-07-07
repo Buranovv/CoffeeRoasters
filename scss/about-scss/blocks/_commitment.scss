@@ -26,3 +26,47 @@
     border-radius: 8px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .commitment,
+  .section {
+    padding: 0;
+    gap: 69px;
+    &__img {
+      width: 280px;
+      height: 470px;
+    }
+    &__texts {
+      width: 339px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__titles {
+      width: 286px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .commitment,
+  .section {
+    padding: 0;
+    gap: 69px;
+    &__img {
+      width: 280px;
+      height: 470px;
+    }
+    &__texts {
+      width: 339px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__titles {
+      width: 286px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}
