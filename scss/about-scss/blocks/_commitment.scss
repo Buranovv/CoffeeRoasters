@@ -3,6 +3,7 @@
   margin-top: 168px;
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   align-items: center;
   padding: 0 85px;
 
@@ -14,7 +15,7 @@
     line-height: 48px;
   }
   &__texts {
-    width: 540px;
+    max-width: 540px;
 
     color: #333d4b;
     font-size: 16px;
@@ -24,9 +25,49 @@
   }
   &__img {
     border-radius: 8px;
+    max-width: 445px;
+    max-height: 520px;
   }
 }
 
+@media only screen and (max-width: 1081px) {
+  .commitment,
+  .section {
+    &__img {
+      width: 345px;
+      height: 420px;
+    }
+    &__texts {
+      width: 339px;
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__titles {
+      width: 286px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+  }
+}
+@media only screen and (max-width: 961px) {
+  .commitment,
+  .section {
+    padding: 0 65px;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .commitment,
+  .section {
+    padding: 0 45px;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .commitment,
+  .section {
+    padding: 0 5px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .commitment,
   .section {
@@ -49,24 +90,59 @@
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
+  .commitment,
+  .section {
+    flex-direction: column;
+    text-align: center;
+
+    &__titles {
+      width: 400px;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    &__texts {
+      width: 540px;
+      font-size: 16px;
+      line-height: 26px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      width: 445px;
+      height: 450px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
   .commitment,
   .section {
     padding: 0;
-    gap: 69px;
-    &__img {
-      width: 280px;
-      height: 470px;
+    flex-direction: column;
+    text-align: center;
+
+    &__titles {
+      width: 400px;
+      font-size: 32px;
+      line-height: 48px;
     }
     &__texts {
-      width: 339px;
+      width: 327px;
       font-size: 15px;
       line-height: 25px;
     }
-    &__titles {
-      width: 286px;
-      font-size: 32px;
-      line-height: 48px;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__img {
+      width: 327px;
+      height: 400px;
     }
   }
 }

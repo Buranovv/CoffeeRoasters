@@ -18,8 +18,65 @@
     color: #fefcf7;
     opacity: 0.800000011920929;
   }
-  &__img{
+  &__img {
     position: relative;
     top: -100px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .quality {
+    flex-direction: column-reverse;
+    padding: 0 57px;
+    text-align: center;
+
+    &__img {
+      border-radius: 8px;
+      width: 563px;
+      height: 320px;
+
+      src: url(../../../images/aboutUsImg/quality2.png);
+    }
+    &__title {
+      width: 413px;
+      font-size: 32px;
+      line-height: 48px;
+    }
+    &__text {
+      width: 540px;
+      margin-bottom: 67px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .quality {
+    &__img {
+      width: 500px;
+      height: 256px;
+    }
+    &__text {
+      width: 450px;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .quality {
+    &__img {
+      width: 479px;
+      height: 236px;
+    }
+    &__text {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 }
