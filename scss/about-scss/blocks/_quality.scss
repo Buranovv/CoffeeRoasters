@@ -20,7 +20,7 @@
   }
   &__img {
     position: relative;
-    top: -100px;
+    top: -70px;
   }
 }
 
@@ -64,6 +64,13 @@
     }
     &__text {
       width: 450px;
+
+      font-size: 15px;
+      line-height: 25px;
+    }
+    &__title {
+      font-size: 28px;
+      line-height: 28px;
     }
   }
 }
@@ -71,12 +78,22 @@
 @media only screen and (max-width: 550px) {
   .quality {
     &__img {
-      width: 479px;
-      height: 236px;
+      width: 279px;
+      height: 156px;
     }
     &__text {
+      width: 279px;
+
       font-size: 15px;
       line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .quality {
+    &__title {
+      width: 279px;
     }
   }
 }
